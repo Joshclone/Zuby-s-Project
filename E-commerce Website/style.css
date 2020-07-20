@@ -1,0 +1,457 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --secondarycolor: #dc143c;
+}
+
+h2 {
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    width: 65px;
+    top: 2em;
+    left: 47.5%;
+    border-top: 5px solid var(--secondarycolor);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.title {
+    color: white;
+    font-family: 'Fugaz One', cursive;
+    text-align: center;
+}
+
+.title a {
+    display: flex;
+    justify-content: center;
+}
+
+.title a img {
+    width: 120px;
+    height: 60px;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.title a p {
+    font-size: 2.5em;
+}
+
+nav ul {
+    text-align: center;
+    margin: 0 19.9em;
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+    text-transform: uppercase;
+}
+
+nav li:first-child {
+    float: left;
+}
+
+nav li a {
+    color: white;
+    display: inline-block;
+    font-size: larger;
+    padding: 10px 35px;
+}
+
+nav li a:hover:not(.active) {
+    border-bottom: 5px solid rgb(206, 206, 206);
+}
+
+nav li a.active {
+    border-bottom: 5px solid var(--secondarycolor);
+}
+
+/* Header */
+header {
+    width: 100%;
+    margin: 0 0 5em 0;    
+}
+
+.header-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.header-image img {
+    width: 100%;
+    height: 440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+}
+
+.header-content {
+    position: absolute;
+    color: white;
+    top: 17%;
+    left: 0;
+    padding: 5.3em 0 5.8em 0;
+    width: 100%;
+    text-align: center;
+}
+
+.header-content h1{
+    font-size: 4em;
+    font-weight: lighter;
+    margin-bottom: .3em;
+}
+
+.header-content h4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 1.5em; 
+}
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: var(--secondarycolor);
+    color: white;
+    cursor: pointer;
+    padding: 1em 2em;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: rgb(139, 0, 0);
+}
+
+section {
+    text-align: center;
+}
+
+.categories {
+    margin: 0 8em;
+}
+
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    margin: 2.5em 0;
+    font-size: 1.5em;
+}
+
+.categories-container > div {
+    margin: 1em;
+}
+
+.beef {
+    background-image: url(beef/cowmeat.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.chicken {
+    background-image: url(Chicken/chick.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.fish {
+    background-image: url(fish/fish.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em;
+    border: 1px solid rgb(212, 212, 212);
+    
+}
+
+.pork {
+    background-image: url(pork/porks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.goat {
+    background-image: url(goat/goatmeat1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.turkey {
+    background-image: url(turkey/turkey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.product-container {
+    margin: 4em 1em 3em 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.product-image {
+    margin: 1em;
+}
+
+.banner {
+    background-image: url(turkey/panic.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300px 500px;
+    background-position: center;
+    margin-top: 4em;
+    height: 500px;
+    color: black;
+}
+
+.banner h1 {
+    font-size: 4em;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    padding-top: 2em;
+}
+
+.banner h4 {
+    font-size: 1.2em;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 2em;
+}
+/* Footer */
+footer {
+    padding: 5em 0;
+    background-color: black;
+    font-size: small;
+}
+
+footer h3 {
+    margin-bottom: 1em;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.links a {
+    margin-bottom: 0.3em;    
+    display: block;    
+    margin-bottom: 0.3em;
+    color: grey;
+}
+
+.icons {
+    text-align: center;
+    font-size: 1em;
+}
+
+.icons p {    
+    margin-top: 0.3em;
+}
+
+.icons i {
+    margin-right: .1em;
+}
+
+.icons a i:nth-child(11){
+    margin-right: 0;
+}
+
+.grey {
+    color: grey;
+}
+
+.second-part i {
+    margin-right: .5em;
+}
+.red {
+    color: var(--secondarycolor);
+}
+
+/* Product Page */
+.items {
+    padding: 5em;
+}
+
+.products-container {
+    margin: 5em auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.products-image {
+    margin: 1em;
+}
+
+.products-image img {
+    border: 5px solid rgb(224, 224, 224);
+    box-shadow: 0 5px 5px 0px grey;
+}
+
+.products-image p {    
+    font-weight: bold;
+}
+
+.products-image img + p {
+    margin-top: 1em;
+}
+
+.products-image a {
+    margin-top: .8em;
+}
+
+.btn-small {
+    padding: .5em 2em;  
+}
+
+.pages {
+    margin-bottom: 2em;
+}
+
+.spacing {
+    margin: 0 1em;
+}
+
+/* Contact Page */
+.contact-container {
+    padding: 5em 15em;
+}
+
+.contact-container h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: .3em;
+}
+
+.contact-container h5 {
+    font-size: 1em;
+    text-align: center;
+    font-weight: lighter;
+}
+
+h5::before {
+    content: "";
+    position: absolute;
+    width: 65px;
+    top: 16.5em;
+    left: 47.5%;
+    border-top: 5px solid var(--secondarycolor);
+}
+
+form {
+    margin-top: 5em;
+}
+
+fieldset {
+    padding: 2em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    font-size: 1em;
+}
+
+input:focus {    
+    outline: none;
+}
+
+/* About Page */
+.about-wrapper {
+    margin-top: 1.7em;
+}
+
+.about-container {
+    padding: 3.5em 15em 0 15em;
+    position: relative;
+    text-align: justify;
+}
+
+h6 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+h6::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    top: 4.8em;
+    left: 19%;
+    border-top: 5px solid var(--secondarycolor);
+}
+
+.about-container p {
+    margin-bottom: .5em;
+}
+
+.about-container ul li {
+    margin-left: 1em;
+}
+
+.bold {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.about-content {
+    margin-top: 0.5em;
+}
+
+.about-button {
+    margin: 2em 0 4em 0;
+    text-align: center;
+}

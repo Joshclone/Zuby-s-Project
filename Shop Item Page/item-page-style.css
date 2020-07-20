@@ -1,0 +1,257 @@
+/* Main Styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std 55 Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: url('HelveticaNeueLTStd55Roman_22526.woff');
+    }
+
+@font-face {
+        font-family: 'Helvetica Neue LT Std 45 Light';
+        font-style: normal;
+        font-weight: normal;
+        src: url('HelveticaNeueLTStd45Light_22520.woff');
+    }
+
+h2, h5{    
+    font-family: 'Helvetica Neue LT Std 45 Light';
+}
+
+body {
+    background: black;
+    margin: 0 auto;
+    width: 400px;
+    font-family: 'Helvetica Neue LT Std 55 Roman';
+}
+
+.container {    
+    margin-top: 14px;
+    width: 390px;
+    background: white;
+}
+
+/* Status Bar */
+.status-bar {
+    width: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-part {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Heading */
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+header h3 {
+    text-transform: uppercase;
+    font-size: 10px;
+    width: 20px;
+    letter-spacing: .5px;
+}
+
+header h2 {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-top: 9px;
+}
+
+header i {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* Article */
+.image-container {
+    width: 93%;
+    height: auto;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 4px 0 rgb(190, 190, 190);
+}
+
+.image-container img {
+    width: 180px;
+    height: 300px;
+    margin-left: 12px;
+    margin-bottom: -3.52px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.article {
+    width: 100%;
+    padding: 8px 15px;
+}
+
+.article h1 {
+    font-size: 25px;
+    letter-spacing: 1.2px;
+    margin-bottom: 15px;
+    padding-left: 2px;
+}
+
+.article-description {
+    display: flex;
+    flex-direction: row;
+}
+
+.article-description h5 {
+    font-size: 11px;
+    letter-spacing: .5px;
+    color: rgb(194, 194, 194);
+    line-height: 14px;
+    font-weight: 10;
+}
+
+.arrow-container {
+    margin-top: 52px;
+    margin-left: 8px;
+}
+
+.arrow-container i {
+    font-size: 11px;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 15px;
+    font-family: 'Helvetica Neue LT Std 45 Light';
+    font-weight: bold;
+}
+
+.price {
+    line-height: 20px;
+    padding-left: 4px;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    margin: 9px 0; 
+}
+
+.quantity p {
+    font-size: 18px;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0; 
+}
+
+button {
+    width: 67%;
+    height: 40px;
+    border: none;
+    background: rgb(255, 64, 57);
+    color: white;
+    box-shadow: 0 4px 4px 0 rgb(189, 189, 189);
+    font-size: 12px;
+    letter-spacing: .5px;
+}
+/* Utilities */
+.circle-size {
+    font-size: 6px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.caption-size{
+    font-size: 6px;
+    letter-spacing: -3px;
+}
+
+.wifi-size {
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.b-size {
+    font-size: 12px;
+    margin-right: 4px;
+    margin-top: 2px;
+}
+
+.battery-size {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: -1px;
+}
+
+.text-size {
+    font-size: 12px;
+    font-family: 'Helvetica Neue LT Std 45 Light';
+    letter-spacing: .5px;
+}
+
+.spacing {
+    margin-left: 2px;
+    margin-right: 8px;
+}
+
+.margin {
+    margin-right: 2px;
+}
+
+.r-margin {
+    margin-right: 28px;
+}
+
+.l-margin {
+    margin-left: 11px;
+}
+
+.fa-minus-square {
+    margin-top: 1px;
+}
+
+.fa-plus-square {
+    margin-top: 1px;
+}
+
+.fa-battery-half {
+    margin-bottom: 3px;
+}
+.red {
+    color: rgb(255, 64, 57);
+}
+
+.grey {
+    color: rgb(219, 219, 219);
+}
+
+.small-font {
+    font-size: 13px;
+}

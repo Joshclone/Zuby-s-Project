@@ -1,0 +1,178 @@
+/* Main styling */
+:root {
+    --primarycolor: #0276fd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    background: rgb(248, 248, 248);
+}
+
+/* Navbar styling */
+
+.navbar {
+    font-size: 1em;
+    margin: 0 11em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navbar > ul {
+    float: left;
+    font-size: larger;
+    margin: 0;
+}
+
+.navbar ul li {
+    float: left;
+    padding: 10px 0;
+}
+
+.navbar ul:first-child li:first-child {
+    text-align: left;
+    padding-right: .3em;
+    border-right: 1px solid white; 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0 15px;
+}
+
+.transparent {
+    background: #78abf1;
+}
+
+/* Section styling*/
+.section-container {
+    padding: 4em 12em 6.2em 12em;
+    display: inline-flex;
+}
+
+.menu-container ul li{
+    border-bottom: 1px solid grey;
+    padding: 1.2em 8em 1.2em 0.5em;
+    font-size: .7em;
+}
+
+.menu-container ul li:first-child {
+    border-bottom: none;
+    color: white;
+}
+
+.menu-container ul li:last-child {
+    border-bottom: none;
+}
+
+.article-container {
+    margin-left: 4em;
+}
+
+.article-container h1 {
+    margin-bottom: 1.5em;
+    font-size: 1.05em;
+}
+
+.article-container h2 {
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.button-container {
+    padding: 1.5em 11em 1.5em 1em;
+    margin-bottom: 3em;
+}
+
+.button-container p {
+    font-size: .7em;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: var(--primarycolor);
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 1em 4em;
+    margin-left: 2em;
+    margin-top: 1em;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+.statistics-container h3 {
+    margin-bottom: 1.5em;    
+    font-size: 1.2em;
+}
+
+.data-container {
+    display: inline-flex;
+}
+
+.data-container div {
+    padding: 5px 10px;
+    margin-right: 1em;    
+}
+
+.data-container div h5 {
+    font-size: 1.5em;
+}
+
+.data-container div h6 {
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.data-container div:last-child h5 {
+    color: rgb(33, 204, 33);
+    
+}
+/* Footer styling */
+.footer {
+    margin: 0 14.5em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: .8em;
+    padding: 1.2em 1em; 
+}
+
+/* Utilities */
+.blue {
+    background-color: var(--primarycolor);
+}
+
+.no-border {
+    border-bottom: none;
+}
+
+.fa-user-circle {
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.fa-cog {
+    font-size: 16px;
+    margin: 0;
+}
+
+.white {
+    background-color: white;
+}
+
+.cancel {
+    text-decoration: line-through;
+}

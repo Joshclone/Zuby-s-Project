@@ -1,0 +1,190 @@
+:root {
+    --primarycolor: rgb(255, 64, 57);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: "Lato", sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: lighter;
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+/* Navbar Styling*/
+.navbar-container {
+    position: fixed;
+    font-family: "Montserrat", sans-serif;
+    background: var(--primarycolor);
+    width: 100%;    
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 8px 0 rgb(160, 70, 70);
+}
+
+.navbar-container div {
+    font-size: 18px;
+    padding: 15px 24px;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header */
+.start-page-container {
+    background: var(--primarycolor);
+    padding-top: 155px;
+    padding-bottom: 125px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.start-page-container h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 64px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.start-page-container p {
+    font-size: 24px;
+    margin: 2.2rem 0 2.8rem 0;
+}
+
+/* Section Styling */
+.article1-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.8fr 0.8fr;
+    padding: 50px;
+}
+
+.article-section {
+    padding: 30px 0;
+    padding-left: 40px;
+    margin-left: 50px;
+    margin-right: 35px;
+}
+
+.article-section h3 {
+    margin: 40px 0;
+    line-height: 26px;
+}
+
+.article-section p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.article2-container {
+    background: whitesmoke;
+    display: grid;
+    grid-template-columns: 0.81fr 1.75fr;
+    padding: 90px 0;
+}
+
+.article-icon {
+    text-align: right;
+}
+
+.article2-section {
+    margin-left: 70px;
+    margin-right: 140px;
+}
+
+.article2-section h3 {
+    margin: 40px 0;
+    line-height: 26px;
+}
+
+.article2-section p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.quote {
+    background: rgb(110, 110, 110);
+    text-align: center;
+    color: white;
+    padding: 83px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Footer */
+footer {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.footer-icons {
+    font-size: 23px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer p a {
+    color: grey;
+}
+
+
+/* Utilities */
+button {
+    font-family: "Montserrat", sans-serif;
+    width: 150px;
+    font-size: 18px;
+    padding: 15px 10px;
+    color: white;
+    background: black;
+    outline: none;
+    border: none;
+}
+
+.icon-anchor {
+    font-size: 200px;
+    color: var(--primarycolor);
+    margin-top: 80px; 
+}
+
+.icon-coffee {
+    font-size: 150px;
+    color: var(--primarycolor);
+    margin-top: 65px;
+}
+
+.grey {
+    color: grey;
+}
+
+.white {
+    background: white;
+}
+
+.black {    
+    color: black;
+}
